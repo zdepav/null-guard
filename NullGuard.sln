@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullGuard", "NullGuard\NullGuard.csproj", "{0D2044A7-FF33-411E-96A7-2C2ECA402C23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullGuardTests", "NullGuardTests\NullGuardTests.csproj", "{6D46C62A-8B41-422D-BA17-F7DAE5C2FE37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D2044A7-FF33-411E-96A7-2C2ECA402C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2044A7-FF33-411E-96A7-2C2ECA402C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2044A7-FF33-411E-96A7-2C2ECA402C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2044A7-FF33-411E-96A7-2C2ECA402C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D46C62A-8B41-422D-BA17-F7DAE5C2FE37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D46C62A-8B41-422D-BA17-F7DAE5C2FE37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D46C62A-8B41-422D-BA17-F7DAE5C2FE37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D46C62A-8B41-422D-BA17-F7DAE5C2FE37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3ECC32E-0372-41E3-881A-B85523767783}
+	EndGlobalSection
+EndGlobal
