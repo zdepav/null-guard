@@ -18,7 +18,5 @@ namespace NullGuard {
             ModuleBuilder = AssemblyBuilder.DefineDynamicModule("MainModule");
             ViolationExceptionConstructor = typeof(NullSafetyViolationException).GetConstructor(new[] { typeof(string) });
         }
-
     }
-
 }

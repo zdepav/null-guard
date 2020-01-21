@@ -10,7 +10,5 @@ namespace NullGuard {
         public NullSafetyViolationException(string message) : base(message) { }
 
         public NullSafetyViolationException(string message, Exception innerException) : base(message, innerException) { }
-
     }
-
 }

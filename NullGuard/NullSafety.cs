@@ -22,9 +22,8 @@ namespace NullGuard {
         public static T Guard(T instance) {
             if (instance is null)
                 return null;
-            if (guardCreator != null)
-                return guardCreator(instance);
-            Prepare();
+            if (guardCreator == null)
+                Prepare();
             return guardCreator(instance);
         }
 
@@ -65,7 +64,7 @@ namespace NullGuard {
             foreach (var fn in type.GetMethods(BindingFlags.Instance | BindingFlags.Public).Where(m => !m.IsSpecialName)) {
                 var nullable = GetNullability(fn.CustomAttributes, "method");
                 if (fn.ReturnType.IsByRef)
-                    throw new InvalidOperationException("Nullability attributes can not be used on void methods.");
+                    throw new InvalidOperationException("Nullability attributes can not be used on methods that return ref.");
                 if (nullable.HasValue && fn.ReturnType == typeof(void))
                     throw new InvalidOperationException("Nullability attributes can not be used on void methods.");
                 AddCheckedMethod(type, tb, fb, fn, nullable);
@@ -332,7 +331,5 @@ namespace NullGuard {
             }
             return nullable;
         }
-
     }
-
 }
